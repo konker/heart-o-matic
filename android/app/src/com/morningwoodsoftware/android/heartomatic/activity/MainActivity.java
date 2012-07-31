@@ -1,20 +1,25 @@
 package com.morningwoodsoftware.android.heartomatic.activity;
 
 import android.util.Log;
-import android.app.Activity;
 import android.os.Bundle;
 import android.content.Intent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 import android.view.View;
 import android.view.View.OnClickListener;
+
+import com.actionbarsherlock.app.SherlockActivity;
 
 import com.morningwoodsoftware.android.heartomatic.R;
 import com.morningwoodsoftware.android.heartomatic.HeartOMaticApplication;
 
-public class Main extends Activity implements OnClickListener
+public class MainActivity extends SherlockActivity implements OnClickListener
 {
     private HeartOMaticApplication app;
 
+    private TextView textMessage;
     private Button buttonPrefs;
 
     /** Called when the activity is first created. */
@@ -26,10 +31,23 @@ public class Main extends Activity implements OnClickListener
 
         this.app = (HeartOMaticApplication) getApplication();
 
+        textMessage = (TextView)findViewById(R.id.textMessage);
+        if (isConfigured()) {
+            textMessage.setText(R.string.configured_message);
+        }
+        else {
+            textMessage.setText(R.string.unconfigured_message);
+        }
         buttonPrefs = (Button)findViewById(R.id.buttonPrefs);
         buttonPrefs.setOnClickListener(this);
 
         Log.d(HeartOMaticApplication.TAG, "Main.onCreate");
+    }
+
+    public boolean isConfigured()
+    {
+        //[TODO]
+        return false;
     }
 
     @Override

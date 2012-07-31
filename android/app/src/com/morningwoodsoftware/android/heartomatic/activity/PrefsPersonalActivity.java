@@ -11,7 +11,7 @@ import com.actionbarsherlock.app.SherlockPreferenceActivity;
 import com.morningwoodsoftware.android.heartomatic.R;
 import com.morningwoodsoftware.android.heartomatic.HeartOMaticApplication;
 
-public class PrefsActivity extends SherlockPreferenceActivity
+public class PrefsPersonalActivity extends SherlockPreferenceActivity
 {
     HeartOMaticApplication app;
 
@@ -23,11 +23,11 @@ public class PrefsActivity extends SherlockPreferenceActivity
 
         app = (HeartOMaticApplication) getApplication();
 
-        addPreferencesFromResource(R.xml.prefs);
+        addPreferencesFromResource(R.xml.prefs_personal);
         setContentView(R.layout.prefs);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Log.d(HeartOMaticApplication.TAG, "PrefsActivity.onCreate");
+        Log.d(HeartOMaticApplication.TAG, "PrefsPersonalActivity.onCreate");
     }
 
     @Override
@@ -78,7 +78,7 @@ public class PrefsActivity extends SherlockPreferenceActivity
         Log.d(HeartOMaticApplication.TAG, "Main.buttonPrefs clicked: " + item.getItemId());
         switch (item.getItemId()) {
             case android.R.id.home:
-                Intent intent = new Intent(this, MainActivity.class);
+                Intent intent = new Intent(this, PrefsActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 return true;

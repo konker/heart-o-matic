@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_sex">
+        <item name="not_specified">Not Specified</item>
+        <item name="male">Male</item>
+        <item name="female">Female</item>
+    </string-array>
+    <string-array name="settings_sex_values">
+        <item name="not_specified">not_specified</item>
+        <item name="male">male</item>
+        <item name="female">female</item>
+    </string-array>
+</resources>
+

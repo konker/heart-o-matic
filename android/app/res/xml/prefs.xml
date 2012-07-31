@@ -16,26 +16,8 @@
         android:title="@string/zones"
         android:persistent="false"
         >
-        <CheckBoxPreference
-            android:title="@string/title_auto_calculate"
-            android:summary="@string/summary_auto_calculate"
-            android:key="auto_calculate"
-            android:defaultValue="true"
-            android:disableDependentsState="true"
-            />
-        <EditTextPreference
-            android:title="@string/title_moderate_zone_high" 
-            android:summary="@string/summary_moderate_zone_high" 
-            android:key="moderate_zone_high"
-            android:numeric="integer"
-            android:dependency="auto_calculate"
-            />
-        <EditTextPreference
-            android:title="@string/title_moderate_zone_low" 
-            android:summary="@string/summary_moderate_zone_low" 
-            android:key="moderate_zone_low"
-            android:numeric="integer"
-            android:dependency="auto_calculate"
+        <intent android:action="android.intent.action.VIEW"
+            android:targetClass="com.morningwoodsoftware.android.heartomatic.activity.PrefsZonesActivity"
             />
     </PreferenceScreen>
     <PreferenceScreen
@@ -43,24 +25,17 @@
         android:title="@string/hr_belt"
         android:persistent="false"
         >
-        <!-- TODO -->
+        <intent android:action="android.intent.action.VIEW"
+            android:targetClass="com.morningwoodsoftware.android.heartomatic.activity.PrefsHeartRateBeltActivity"
+            />
     </PreferenceScreen>
     <PreferenceScreen
         android:key="button_audio_category_key"
         android:title="@string/audio"
         android:persistent="false"
         >
-        <CheckBoxPreference
-            android:key="zone_warnings"
-            android:title="@string/title_enable_zone_warnings"
-            android:summary="@string/summary_enable_zone_warnings"
-            android:defaultValue="true"
-            />
-        <CheckBoxPreference
-            android:key="hr_audio_feedback"
-            android:title="@string/title_hr_audio_feedback"
-            android:summary="@string/summary_hr_audio_feedback"
-            android:defaultValue="true"
+        <intent android:action="android.intent.action.VIEW"
+            android:targetClass="com.morningwoodsoftware.android.heartomatic.activity.PrefsAudioActivity"
             />
     </PreferenceScreen>
     <PreferenceScreen
@@ -68,15 +43,8 @@
         android:title="@string/account"
         android:persistent="false"
         >
-        <EditTextPreference
-            android:title="@string/title_username" 
-            android:summary="@string/summary_username" 
-            android:key="username"
-            />
-        <EditTextPreference
-            android:title="@string/title_password" 
-            android:summary="@string/summary_password" 
-            android:key="password"
+        <intent android:action="android.intent.action.VIEW"
+            android:targetClass="com.morningwoodsoftware.android.heartomatic.activity.PrefsAccountActivity"
             />
     </PreferenceScreen>
 </PreferenceScreen> 

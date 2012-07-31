@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <CheckBoxPreference
+        android:key="zone_warnings"
+        android:title="@string/title_enable_zone_warnings"
+        android:summary="@string/summary_enable_zone_warnings"
+        android:defaultValue="true"
+        />
+    <CheckBoxPreference
+        android:key="hr_audio_feedback"
+        android:title="@string/title_hr_audio_feedback"
+        android:summary="@string/summary_hr_audio_feedback"
+        android:defaultValue="true"
+        />
+</PreferenceScreen>
+

@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="screen">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="zonePanel">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="zonePanel.High">
+        <item name="android:background">#aa0000</item>
+        <item name="android:layout_weight">33</item>
+    </style>
+    <style name="zonePanel.Moderate">
+        <item name="android:background">#aaaa00</item>
+        <item name="android:layout_weight">33</item>
+    </style>
+    <style name="zonePanel.Low">
+        <item name="android:background">#00aa00</item>
+        <item name="android:layout_weight">34</item>
+    </style>
     <style name="dashboardPanel">
         <item name="android:orientation">vertical</item>
         <item name="android:layout_width">fill_parent</item>

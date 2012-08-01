@@ -21,9 +21,6 @@ public class MainActivity extends SherlockActivity
 {
     private HeartOMaticApplication app;
 
-    private TextView textMessage;
-    private Button buttonPrefs;
-
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -33,29 +30,27 @@ public class MainActivity extends SherlockActivity
 
         this.app = (HeartOMaticApplication) getApplication();
 
-        /*
-        buttonPrefs = (Button)findViewById(R.id.buttonPrefs);
-        buttonPrefs.setOnClickListener(new View.OnClickListener() {
+        Button buttonStartWorkout = (Button)findViewById(R.id.buttonStartWorkout);
+        buttonStartWorkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
             {
-                Log.d(HeartOMaticApplication.TAG, "Main.buttonPrefs clicked");
-                Intent intent = new Intent(MainActivity.this, PrefsActivity.class);
+                Log.d(HeartOMaticApplication.TAG, "Main.buttonStartWorkout clicked");
+                Intent intent = new Intent(MainActivity.this, WorkoutActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
         });
-        */
 
-        textMessage = (TextView)findViewById(R.id.textMessage);
+        /*
+        TextView textMessage = (TextView)findViewById(R.id.textMessage);
         if (isConfigured()) {
             textMessage.setText(R.string.configured_message);
-            //buttonPrefs.setVisibility(View.GONE);
         }
         else {
             textMessage.setText(R.string.unconfigured_message);
-            //buttonPrefs.setVisibility(View.VISIBLE);
         }
+        */
 
         TextView statusText;
         ImageView icon;

@@ -18,4 +18,7 @@
     <item type="id" name="statusPanelHR"/>
     <item type="id" name="statusPanelHRIcon"/>
     <item type="id" name="statusPanelHRText"/>
+    <item type="id" name="highZonePanel"/>
+    <item type="id" name="moderateZonePanel"/>
+    <item type="id" name="lowZonePanel"/>
 </resources>

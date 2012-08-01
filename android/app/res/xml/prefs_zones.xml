@@ -5,21 +5,21 @@
     <CheckBoxPreference
         android:title="@string/title_auto_calculate"
         android:summary="@string/summary_auto_calculate"
-        android:key="auto_calculate"
+        android:key="@string/auto_calculate"
         android:defaultValue="true"
         android:disableDependentsState="true"
         />
     <EditTextPreference
         android:title="@string/title_moderate_zone_high" 
         android:summary="@string/summary_moderate_zone_high" 
-        android:key="moderate_zone_high"
+        android:key="@string/moderate_zone_high"
         android:numeric="integer"
         android:dependency="auto_calculate"
         />
     <EditTextPreference
         android:title="@string/title_moderate_zone_low" 
         android:summary="@string/summary_moderate_zone_low" 
-        android:key="moderate_zone_low"
+        android:key="@string/moderate_zone_low"
         android:numeric="integer"
         android:dependency="auto_calculate"
         />

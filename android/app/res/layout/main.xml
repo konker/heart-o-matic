@@ -9,11 +9,91 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         />
+    <!--
     <Button
         android:id="@id/buttonPrefs" 
         android:text="@string/settings"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         />
+        -->
+    <LinearLayout
+        android:id="@id/dashboardPanel"
+        style="@style/dashboardPanel"
+        >
+        <Button
+            android:id="@id/buttonStartWorkout" 
+            android:text="@string/start_workout"
+            style="@style/dashboardPanelButton"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@id/statusPanel"
+        style="@style/statusPanel"
+        >
+        <!-- zones status -->
+        <LinearLayout
+            android:id="@id/statusPanelZones"
+            style="@style/statusPanelItem"
+            >
+            <ImageView
+                android:id="@id/statusPanelZonesIcon"
+                android:src="@android:drawable/presence_busy"
+                style="@style/statusPanelItemIcon"
+                />
+            <TextView
+                android:id="@id/statusPanelZonesText"
+                android:text="@string/zones_not_configured"
+                style="@style/statusPanelItemText"
+                />
+        </LinearLayout>
+
+        <!-- bluetooth belt status -->
+        <LinearLayout
+            android:id="@id/statusPanelBluetooth"
+            style="@style/statusPanelItem"
+            >
+            <ImageView
+                android:id="@id/statusPanelBluetoothIcon"
+                android:src="@android:drawable/presence_busy"
+                style="@style/statusPanelItemIcon"
+                />
+            <TextView
+                android:id="@id/statusPanelBluetoothText"
+                android:text="@string/bluetooth_not_configured"
+                style="@style/statusPanelItemText"
+                />
+        </LinearLayout>
+
+        <!-- heart-rate belt status -->
+        <LinearLayout
+            android:id="@id/statusPanelHRBelt"
+            style="@style/statusPanelItem"
+            >
+            <ImageView
+                android:id="@id/statusPanelHRBeltIcon"
+                android:src="@android:drawable/presence_busy"
+                style="@style/statusPanelItemIcon"
+                />
+            <TextView
+                android:id="@id/statusPanelHRBeltText"
+                android:text="@string/hr_belt_not_configured"
+                style="@style/statusPanelItemText"
+                />
+        </LinearLayout>
+
+        <!-- heart-rate status -->
+        <LinearLayout
+            android:id="@id/statusPanelHR"
+            style="@style/statusPanelItem"
+            >
+            <TextView
+                android:id="@id/statusPanelHRText"
+                android:text="@string/hr_belt_not_configured"
+                style="@style/statusPanelItemText.HR"
+                />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
 

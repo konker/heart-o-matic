@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <item type="id" name="menuPreferences"/>
     <item type="id" name="textMessage"/>
     <item type="id" name="buttonPrefs"/>
+    <item type="id" name="dashboardPanel"/>
+    <item type="id" name="buttonStartWorkout"/>
+    <item type="id" name="statusPanel"/>
+    <item type="id" name="statusPanelZones"/>
+    <item type="id" name="statusPanelZonesIcon"/>
+    <item type="id" name="statusPanelZonesText"/>
+    <item type="id" name="statusPanelBluetooth"/>
+    <item type="id" name="statusPanelBluetoothIcon"/>
+    <item type="id" name="statusPanelBluetoothText"/>
+    <item type="id" name="statusPanelHRBelt"/>
+    <item type="id" name="statusPanelHRBeltIcon"/>
+    <item type="id" name="statusPanelHRBeltText"/>
+    <item type="id" name="statusPanelHR"/>
+    <item type="id" name="statusPanelHRIcon"/>
+    <item type="id" name="statusPanelHRText"/>
 </resources>

@@ -5,7 +5,7 @@
     <ListPreference
         android:title="@string/title_sex"
         android:summary="@string/summary_sex"
-        android:key="sex"
+        android:key="@string/sex"
         android:entries="@array/settings_sex"
         android:entryValues="@array/settings_sex_values"
         android:defaultValue="not_specified"
@@ -14,21 +14,21 @@
     <EditTextPreference
         android:title="@string/title_age" 
         android:summary="@string/summary_age" 
-        android:key="age"
+        android:key="@string/age"
         android:numeric="integer"
         />
     <!--[TODO: do we need this?]
     <EditTextPreference
         android:title="@string/title_resting_hr" 
         android:summary="@string/summary_resting_hr" 
-        android:key="resting_hr"
+        android:key="@string/resting_hr"
         android:numeric="integer"
         />
     -->
     <EditTextPreference
         android:title="@string/title_max_hr" 
         android:summary="@string/summary_max_hr" 
-        android:key="max_hr"
+        android:key="@string/max_hr"
         android:numeric="integer"
         />
 </PreferenceScreen>

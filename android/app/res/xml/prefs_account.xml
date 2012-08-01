@@ -5,12 +5,12 @@
     <EditTextPreference
         android:title="@string/title_username" 
         android:summary="@string/summary_username" 
-        android:key="username"
+        android:key="@string/username"
         />
     <EditTextPreference
         android:title="@string/title_password" 
         android:summary="@string/summary_password" 
-        android:key="password"
+        android:key="@string/password"
         />
 </PreferenceScreen>
 

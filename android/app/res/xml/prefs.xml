@@ -3,47 +3,52 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
     <PreferenceScreen
-        android:key="button_personal_category_key"
+        android:key="@string/button_personal_category_key"
         android:title="@string/personal"
         android:persistent="false"
         >
         <intent android:action="android.intent.action.VIEW"
+            android:targetPackage="com.morningwoodsoftware.android.heartomatic"
             android:targetClass="com.morningwoodsoftware.android.heartomatic.activity.PrefsPersonalActivity"
             />
     </PreferenceScreen>
     <PreferenceScreen
-        android:key="button_zones_category_key"
+        android:key="@string/button_zones_category_key"
         android:title="@string/zones"
         android:persistent="false"
         >
         <intent android:action="android.intent.action.VIEW"
+            android:targetPackage="com.morningwoodsoftware.android.heartomatic"
             android:targetClass="com.morningwoodsoftware.android.heartomatic.activity.PrefsZonesActivity"
             />
     </PreferenceScreen>
     <PreferenceScreen
-        android:key="button_hr_belt_category_key"
+        android:key="@string/button_hr_belt_category_key"
         android:title="@string/hr_belt"
         android:persistent="false"
         >
         <intent android:action="android.intent.action.VIEW"
+            android:targetPackage="com.morningwoodsoftware.android.heartomatic"
             android:targetClass="com.morningwoodsoftware.android.heartomatic.activity.PrefsHeartRateBeltActivity"
             />
     </PreferenceScreen>
     <PreferenceScreen
-        android:key="button_audio_category_key"
+        android:key="@string/button_audio_category_key"
         android:title="@string/audio"
         android:persistent="false"
         >
         <intent android:action="android.intent.action.VIEW"
+            android:targetPackage="com.morningwoodsoftware.android.heartomatic"
             android:targetClass="com.morningwoodsoftware.android.heartomatic.activity.PrefsAudioActivity"
             />
     </PreferenceScreen>
     <PreferenceScreen
-        android:key="button_account_category_key"
+        android:key="@string/button_account_category_key"
         android:title="@string/account"
         android:persistent="false"
         >
         <intent android:action="android.intent.action.VIEW"
+            android:targetPackage="com.morningwoodsoftware.android.heartomatic"
             android:targetClass="com.morningwoodsoftware.android.heartomatic.activity.PrefsAccountActivity"
             />
     </PreferenceScreen>

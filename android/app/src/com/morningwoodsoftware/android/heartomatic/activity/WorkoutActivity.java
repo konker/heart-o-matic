@@ -6,12 +6,12 @@ import android.content.Intent;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
+import com.actionbarsherlock.app.SherlockActivity;
 
 import com.morningwoodsoftware.android.heartomatic.R;
 import com.morningwoodsoftware.android.heartomatic.HeartOMaticApplication;
 
-public class WorkoutActivity extends SherlockPreferenceActivity
+public class WorkoutActivity extends SherlockActivity
 {
     HeartOMaticApplication app;
 

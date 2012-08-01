@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/screen"
+    style="@style/Screen"
     >
     <LinearLayout
-        id="@id/highZonePanel"
-        style="zonePanel.High"
+        android:id="@id/highZonePanel"
+        style="@style/ZonePanel.High"
         >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="HIGH"
+            />
     </LinearLayout>
     <LinearLayout
-        id="@id/moderateZonePanel"
-        style="zonePanel.Moderate"
+        android:id="@id/moderateZonePanel"
+        style="@style/ZonePanel.Moderate"
         >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="MODERATE"
+            />
     </LinearLayout>
     <LinearLayout
-        id="@id/lowZonePanel"
-        style="zonePanel.Low"
+        android:id="@id/lowZonePanel"
+        style="@style/ZonePanel.Low"
         >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="LOW"
+            />
     </LinearLayout>
 </LinearLayout>
